@@ -1,0 +1,6 @@
+<h2>My movie lists</h2>
+
+<% @list.bookmarks.each do |bookmark| %>
+  <p><%= bookmark.movie.title %></p>
+  <p><%= bookmark.movie.overview %></p>
+<% end %>
