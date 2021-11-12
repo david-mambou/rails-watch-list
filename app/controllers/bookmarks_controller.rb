@@ -16,9 +16,6 @@ class BookmarksController < ApplicationController
     if @bookmark.save
       redirect_to list_path(@list)
     else
-      p 'I didnt save!!!!!!!!!!!!!!!!!!!!!!!!!'
-      p @bookmark.errors.messages
-      p
       render :new
     end
   end
