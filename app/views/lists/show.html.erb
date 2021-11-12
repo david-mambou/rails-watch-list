@@ -1,6 +1,8 @@
 <h2>My movie list: <%= @list.name %></h2>
 
-<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+<% if @list.photo.attached? %>
+  <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>
 
 <% @list.bookmarks.each do |bookmark| %>
   <p><%= bookmark.movie.title %></p>
