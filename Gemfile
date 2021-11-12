@@ -54,5 +54,6 @@ gem 'simple_form'
 
 gem 'open-uri'
 
-# For Cloudinary secret keys
+# For Cloudinary and its secret keys
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.16.0'
