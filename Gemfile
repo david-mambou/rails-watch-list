@@ -53,3 +53,6 @@ gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 
 gem 'open-uri'
+
+# For Cloudinary secret keys
+gem 'dotenv-rails', groups: [:development, :test]
